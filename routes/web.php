@@ -14,7 +14,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    (new \App\Http\Services\Parser('https://www.pravda.com.ua'))->parse();
-    die('SS');
-
+    return view('welcome');
 });
